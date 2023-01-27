@@ -1,0 +1,42 @@
+<mat-toolbar> Responsive side navigation </mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <button mat-button class="menu-button">
+      <span style="color: white">Posts</span>
+    </button>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+      <span>Comments</span>
+    </button>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+      <span>Albums</span>
+    </button>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+      <span>Photos</span>
+    </button>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+      <span>Todos</span>
+    </button>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- <div class= "content mat-elevation-z4">
+            Main Content
+        </div> -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <mat-divider></mat-divider>
+    <button mat-button class ="menu-button">
+        <mat-icon>info</mat-icon>
+        <span>About</span>
+    </button> -->
