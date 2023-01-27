@@ -1,0 +1,19 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<div class="row">
+  <a href="#" target="_blank" *ngFor="let i of data">
+    <div class="column">
+      <div class="card">
+        <img src="../assets/img_avatar.jpg" style="width: 100%" />
+        <h3>{{ i.firstName }} {{ i.lastName }}</h3>
+        <p>{{ i.role }}</p>
+
+        <a href="{{ i.fb }}" class="fa fa-facebook"></a>
+        <a href="{{ i.twitter }}" class="fa fa-twitter"></a>
+        <a href="{{ i.linkedIn }}" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </a>
+</div>
